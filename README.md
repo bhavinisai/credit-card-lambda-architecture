@@ -71,7 +71,7 @@ pip install kafka-python mysql-connector-python python-dotenv black
 
 > **Ensure MySQL and Kafka are installed and running before proceeding.**
 
-### 🔧 1. Set Up Environment
+### 1. Set Up Environment
 
 Create a `.env` file by copying `.env.example`:
 
