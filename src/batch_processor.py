@@ -1,6 +1,32 @@
 import os
 import csv
-from helper import calculate_credit_score_adjustment, calculate_new_credit_limit
+
+
+def calculate_credit_score_adjustment(usage_percentage):
+    if usage_percentage <= 10:
+        return 15
+    elif usage_percentage <= 20:
+        return 10
+    elif usage_percentage <= 30:
+        return 5
+    elif usage_percentage <= 50:
+        return -5
+    elif usage_percentage <= 70:
+        return -15
+    else:
+        return -25
+
+
+def calculate_new_credit_limit(old_limit, credit_score_change):
+    if credit_score_change >= 0:
+        return old_limit
+    if credit_score_change <= -20:
+        reduction_factor = 0.85
+    elif credit_score_change <= -10:
+        reduction_factor = 0.90
+    else:
+        reduction_factor = 0.95
+    return round(old_limit * reduction_factor, -2)
 
 
 class BatchProcessor:

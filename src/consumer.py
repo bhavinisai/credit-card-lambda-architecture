@@ -4,7 +4,17 @@ import csv
 import mysql.connector
 from kafka import KafkaConsumer
 from dotenv import load_dotenv
-from helper import is_location_close_enough
+
+
+def is_location_close_enough(zip1, zip2):
+    if not zip1 or not zip2 or len(zip1) < 5 or len(zip2) < 5:
+        return False
+    if zip1[:1] != zip2[:1]:
+        return False
+    if zip1[:2] != zip2[:2]:
+        return True
+    return True
+
 
 # loading environment variables
 load_dotenv()
