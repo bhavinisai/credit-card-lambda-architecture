@@ -10,7 +10,8 @@ The system ensures valid transactions are approved, balances are updated, and cu
 
 ---
 
-## Dataset Description
+## Dataset Description and Schema 
+The project uses a MySQL database named `banking_system`, that has to be initialized using the `banking_schema.sql` file. It defines the key tables and relationships needed for simulating a credit card transaction system.
 
 The dataset used in this project represents a simplified legacy banking system, provided in CSV format. It consists of key entities related to credit card transactions, customers, and financial operations.
 

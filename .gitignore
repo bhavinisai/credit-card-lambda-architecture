@@ -4,17 +4,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environments
-venv/
-env/
-.venv/
-.env/
-
-# Environment files
-.env
-
-# VS Code and IDE metadata (optional but good)
+# VS Code and IDE metadata
 .vscode/
 .idea/
 *.log
 
+venv/
