@@ -225,11 +225,5 @@ All validated transactions are written to `results/stream_transactions.csv`, inc
 ## Author
 
 **Bhavini Sai Mallu**  
-Graduate Student at 
-Rochester Institute of Technology  
-bm5726@rit.edu  
-
-This project was completed as part of the **DSCI-644** course: Software Engineering for Data Science at Rochester Institute of Technology. This project focuses on building a scalable Banking System using **Lambda Architecture** by integrating real-time validation through Kafka, batch processing using Python, and a serving layer through MySQL, along with modular, testable code design and pipeline compatibility.
-
-
+Graduate Student
 ---
